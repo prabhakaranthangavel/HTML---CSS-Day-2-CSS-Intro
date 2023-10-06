@@ -1,0 +1,200 @@
+Contents:
+
+1.CSS
+
+2.How to use CSS?
+  (1)inline css  (2)internal css   (3)external css
+
+3.How to style a specific element?
+  (1)class selectors     (2)id selectors     (3)tag selector
+
+*************************************************************************************************************************
+
+1.CSS
+
+what is CSS?
+
+===>CSS stands for Cascading Style Sheets
+
+===>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+
+===>External stylesheets are stored in CSS files.
+
+===>Syntax:
+    tag name : property : value   
+
+*************************************************************************************************************************
+
+2.How to use CSS?
+
+===>Three Ways to insert CSS:
+    CSS ஐ பயன்படுத்த இருக்கும் மூன்று வழிகள்
+
+    (1)inline css  (2)internal css   (3)external css
+
+
+1.what is INLINE CSS?
+
+===>An inline CSS is used to apply a unique style to a single HTML element.
+    ஒரு HTML elements க்கு மட்டும் separate style ஐ பயன்படுத்த ஒரு inline CSS பயன்படுகிறது.
+
+===>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+    inline style ப் பயன்படுத்த, தொடர்புடைய attribute ஐ கொடுக்க வேண்டும்.
+
+===>inline css most priority and importances **but not used inline css because not unique.
+
+===>Example: 
+         
+        <!DOCTYPE html>
+        <html>
+
+        <body>
+
+            <h1 style="color:blue;text-align:center;">WELCIME</h1>
+            <p style="color:red;text-align:center;">to INLINE CSS</p>
+
+        </body>
+
+        </html>
+        
+            ***********************************************************
+
+2.what is INTERNAL CSS?
+
+===>index.html அல்லது html பக்கத்தில் style என்ற tag ஐ உருவாக்கி செய்வதுதான் intenal CSS ஆகும்.
+       
+===>using style tag
+     
+===>Example:
+
+    <!DOCTYPE html>
+    <html>
+    <head> Pseudo class </head>
+
+    <body>
+
+        <h1>Internal CSS</h1>
+        <p>I'm a Web Developer</p>
+
+
+    <style>
+
+        body {background-color:yellow;}
+        h1   {color: blue;}
+        p    {color: red;}
+    </style>
+
+
+    </body>
+    </html>
+
+            ***********************************************************
+
+3.what is INTERNAL CSS?
+
+===>index.html அல்லது html பக்கத்தில் link என்ற tag ஐ உருவாக்கி CSS ஐ இணைத்து அந்தப் பகுதியில் styling செய்வதுதான் external CSS ஆகும்.
+
+===>class அல்லது id ஐ உருவாக்கி தனித்தனியாக styling செய்ய வேண்டும்.
+
+===>Example:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>This is a heading</h1>     // <h1 class="h1">This is a heading
+        <p>This is a paragraph.</p>   //  <p class="p">This is a paragraph.</p>
+    </body> 
+
+</html>
+
+
+"styles.css":
+
+    body {
+        background-color: powderblue;
+    }
+
+    h1 {                               // .h1 {
+        color: blue;                           color: blue;
+    }                                         }
+
+    p {                                // .p {
+        color: red;                           color: red;
+    }                                        }
+    
+*************************************************************************************************************************
+
+3.How to style a specific element?
+
+===>Three ways of separate elements for styling.
+    (1)class selectors     (2)id selectors     (3)tag selector
+
+1.what is class selectors?
+
+===>One or more div for all that want to be the same style class selectors just use that.
+
+===>Example:Ration card ===>two or more elements ku color varuvatharku call to class selector.
+
+===>using the dot symbol(.)
+
+===>Example:
+
+    </body>
+        <div class="first">                  .first{
+            <h1>Hello</h1>                          color: aqua;
+        </div>                                     }
+
+        <div class="second">                 .second{
+            <h1>How are you</h1>                     color: chartreuse;
+        </div>                                      }
+    </body>
+        
+            ***********************************************************
+       
+2.what is id selectors?
+
+===>This can be used if you want to style only a specific do an id selectors.
+
+===>Eg:Aadhar Card Number===>particular id ku color varuvatharku call to id selector.
+
+===>using the # astag symbol.
+
+===>Example:
+        
+    </body>
+        <div class="first" id="fir">                  #fir{
+            <h1>Hello</h1>                          color: aqua;
+        </div>                                     }
+
+        <div class="second" id="sec">                 #sec{
+            <h1>How are you</h1>                     color: chartreuse;
+        </div>                                      }
+    </body>
+
+            ***********************************************************
+
+3.what is tag selector?
+
+===>calling a tag is a tag selector.
+
+===>using the symbol div>tagname.
+
+===>The usage is very rare.
+
+===>Example:          
+    
+    <body>
+        <div class="base" id="first">                div>h1 {
+            <h1>Hello</h1>                                   background-color:red ;
+        </div>                                              }
+
+        <div class="base" id="second">               div>h2 {
+            <h2>How are you</h2>                             background-color:red ;
+        </div>                                              }
+    </body>
+
+*************************************************************************************************************************
